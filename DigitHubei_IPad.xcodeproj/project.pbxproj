@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6A3541178BD8AF00B1EE93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A3540178BD8AF00B1EE93 /* UIKit.framework */; };
+		DB6A3543178BD8AF00B1EE93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A3542178BD8AF00B1EE93 /* Foundation.framework */; };
+		DB6A3545178BD8AF00B1EE93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A3544178BD8AF00B1EE93 /* CoreGraphics.framework */; };
+		DB6A354B178BD8AF00B1EE93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB6A3549178BD8AF00B1EE93 /* InfoPlist.strings */; };
+		DB6A354D178BD8AF00B1EE93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A354C178BD8AF00B1EE93 /* main.m */; };
+		DB6A3551178BD8AF00B1EE93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A3550178BD8AF00B1EE93 /* AppDelegate.m */; };
+		DB6A3553178BD8AF00B1EE93 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6A3552178BD8AF00B1EE93 /* Default.png */; };
+		DB6A3555178BD8AF00B1EE93 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6A3554178BD8AF00B1EE93 /* Default@2x.png */; };
+		DB6A3557178BD8AF00B1EE93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6A3556178BD8AF00B1EE93 /* Default-568h@2x.png */; };
+		DB6A355A178BD8AF00B1EE93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A3559178BD8AF00B1EE93 /* ViewController.m */; };
+		DB6A355D178BD8AF00B1EE93 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6A355B178BD8AF00B1EE93 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB6A353D178BD8AF00B1EE93 /* DigitHubei_IPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitHubei_IPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6A3540178BD8AF00B1EE93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB6A3542178BD8AF00B1EE93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB6A3544178BD8AF00B1EE93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB6A3548178BD8AF00B1EE93 /* DigitHubei_IPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitHubei_IPad-Info.plist"; sourceTree = "<group>"; };
+		DB6A354A178BD8AF00B1EE93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB6A354C178BD8AF00B1EE93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB6A354E178BD8AF00B1EE93 /* DigitHubei_IPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitHubei_IPad-Prefix.pch"; sourceTree = "<group>"; };
+		DB6A354F178BD8AF00B1EE93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB6A3550178BD8AF00B1EE93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB6A3552178BD8AF00B1EE93 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DB6A3554178BD8AF00B1EE93 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DB6A3556178BD8AF00B1EE93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DB6A3558178BD8AF00B1EE93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB6A3559178BD8AF00B1EE93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB6A355C178BD8AF00B1EE93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6A353A178BD8AF00B1EE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A3541178BD8AF00B1EE93 /* UIKit.framework in Frameworks */,
+				DB6A3543178BD8AF00B1EE93 /* Foundation.framework in Frameworks */,
+				DB6A3545178BD8AF00B1EE93 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6A3534178BD8AF00B1EE93 = {
+			isa = PBXGroup;
+			children = (
+				DB6A3546178BD8AF00B1EE93 /* DigitHubei_IPad */,
+				DB6A353F178BD8AF00B1EE93 /* Frameworks */,
+				DB6A353E178BD8AF00B1EE93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6A353E178BD8AF00B1EE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A353D178BD8AF00B1EE93 /* DigitHubei_IPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6A353F178BD8AF00B1EE93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A3540178BD8AF00B1EE93 /* UIKit.framework */,
+				DB6A3542178BD8AF00B1EE93 /* Foundation.framework */,
+				DB6A3544178BD8AF00B1EE93 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB6A3546178BD8AF00B1EE93 /* DigitHubei_IPad */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A354F178BD8AF00B1EE93 /* AppDelegate.h */,
+				DB6A3550178BD8AF00B1EE93 /* AppDelegate.m */,
+				DB6A3558178BD8AF00B1EE93 /* ViewController.h */,
+				DB6A3559178BD8AF00B1EE93 /* ViewController.m */,
+				DB6A355B178BD8AF00B1EE93 /* ViewController.xib */,
+				DB6A3547178BD8AF00B1EE93 /* Supporting Files */,
+			);
+			path = DigitHubei_IPad;
+			sourceTree = "<group>";
+		};
+		DB6A3547178BD8AF00B1EE93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A3548178BD8AF00B1EE93 /* DigitHubei_IPad-Info.plist */,
+				DB6A3549178BD8AF00B1EE93 /* InfoPlist.strings */,
+				DB6A354C178BD8AF00B1EE93 /* main.m */,
+				DB6A354E178BD8AF00B1EE93 /* DigitHubei_IPad-Prefix.pch */,
+				DB6A3552178BD8AF00B1EE93 /* Default.png */,
+				DB6A3554178BD8AF00B1EE93 /* Default@2x.png */,
+				DB6A3556178BD8AF00B1EE93 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6A353C178BD8AF00B1EE93 /* DigitHubei_IPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6A3560178BD8AF00B1EE93 /* Build configuration list for PBXNativeTarget "DigitHubei_IPad" */;
+			buildPhases = (
+				DB6A3539178BD8AF00B1EE93 /* Sources */,
+				DB6A353A178BD8AF00B1EE93 /* Frameworks */,
+				DB6A353B178BD8AF00B1EE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitHubei_IPad;
+			productName = DigitHubei_IPad;
+			productReference = DB6A353D178BD8AF00B1EE93 /* DigitHubei_IPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6A3535178BD8AF00B1EE93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = huwei;
+			};
+			buildConfigurationList = DB6A3538178BD8AF00B1EE93 /* Build configuration list for PBXProject "DigitHubei_IPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB6A3534178BD8AF00B1EE93;
+			productRefGroup = DB6A353E178BD8AF00B1EE93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6A353C178BD8AF00B1EE93 /* DigitHubei_IPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6A353B178BD8AF00B1EE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A354B178BD8AF00B1EE93 /* InfoPlist.strings in Resources */,
+				DB6A3553178BD8AF00B1EE93 /* Default.png in Resources */,
+				DB6A3555178BD8AF00B1EE93 /* Default@2x.png in Resources */,
+				DB6A3557178BD8AF00B1EE93 /* Default-568h@2x.png in Resources */,
+				DB6A355D178BD8AF00B1EE93 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6A3539178BD8AF00B1EE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A354D178BD8AF00B1EE93 /* main.m in Sources */,
+				DB6A3551178BD8AF00B1EE93 /* AppDelegate.m in Sources */,
+				DB6A355A178BD8AF00B1EE93 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB6A3549178BD8AF00B1EE93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6A354A178BD8AF00B1EE93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB6A355B178BD8AF00B1EE93 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6A355C178BD8AF00B1EE93 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6A355E178BD8AF00B1EE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DB6A355F178BD8AF00B1EE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6A3561178BD8AF00B1EE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitHubei_IPad/DigitHubei_IPad-Prefix.pch";
+				INFOPLIST_FILE = "DigitHubei_IPad/DigitHubei_IPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB6A3562178BD8AF00B1EE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitHubei_IPad/DigitHubei_IPad-Prefix.pch";
+				INFOPLIST_FILE = "DigitHubei_IPad/DigitHubei_IPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6A3538178BD8AF00B1EE93 /* Build configuration list for PBXProject "DigitHubei_IPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6A355E178BD8AF00B1EE93 /* Debug */,
+				DB6A355F178BD8AF00B1EE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6A3560178BD8AF00B1EE93 /* Build configuration list for PBXNativeTarget "DigitHubei_IPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6A3561178BD8AF00B1EE93 /* Debug */,
+				DB6A3562178BD8AF00B1EE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB6A3535178BD8AF00B1EE93 /* Project object */;
+}
