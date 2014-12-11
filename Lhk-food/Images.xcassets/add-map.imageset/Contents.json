@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "filename" : "add-map-44.png"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "filename" : "add-map-66.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

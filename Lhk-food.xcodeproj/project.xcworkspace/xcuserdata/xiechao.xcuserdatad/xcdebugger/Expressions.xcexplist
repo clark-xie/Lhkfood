@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ResultTableViewController footerRereshing]:ResultTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.shopSearchSpec.currentPage * self.shopSearchSpec.numberPerPage ">
+            </PersistentString>
+            <PersistentString
+               value = "self.shopSearchSpec.numberPerPage">
+            </PersistentString>
+            <PersistentString
+               value = "self.shopSearchSpec.currentPage">
+            </PersistentString>
+            <PersistentString
+               value = "self.shopSearchSpec.resultCount &gt;self.shopSearchSpec.currentPage * self.shopSearchSpec.numberPerPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OffersTableViewController requestFinished:]:OffersTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ResultTableViewController tableView:cellForRowAtIndexPath:]:ResultTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MyTableViewController prepareForSegue:sender:]:MyTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[segue.identifier isEqual: @&quot;myShopSeque&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainViewController tableView:didSelectRowAtIndexPath:]:MainViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ResultTableViewController requestFinished:]:ResultTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.shopSearchSpec">
+            </PersistentString>
+            <PersistentString
+               value = "pageresultArray count">
+            </PersistentString>
+            <PersistentString
+               value = "[dic objectForKey:@&quot;currentPage&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "(NSNull *)pageresultArray == [NSNull null]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ResultTableViewController menu:didSelectRowAtIndexPath:]:ResultTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OffersTableViewController tableView:cellForRowAtIndexPath:]:OffersTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSString stringWithFormat:@&quot;%@-%@&quot;,[Helper stringFromDate:offer .valid_from ], [Helper stringFromDate:offer.valid_to] ]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MapViewController callout:willShowForFeature:layer:mapPoint:]:MapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[graphice attributeForKey:@&quot;1&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainViewController press:]:MainViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MyFavoritesTableViewController viewDidLoad]:MyFavoritesTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController&#10;    self.navigationController&#10;    self.navigationController&#10;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController mapView:shouldShowCalloutForGraphic:]:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AddShopViewController requestFinished:]:AddShopViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AddShopViewController viewDidLoad]:AddShopViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
