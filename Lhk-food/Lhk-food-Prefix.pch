@@ -1,0 +1,145 @@
+//
+// Prefix header for all source files of the 'DigitHubei_IPad' target in the 'DigitHubei_IPad' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "JSONKit.h"
+#import "DejalActivityView.h"
+#import <ArcGIS/ArcGIS.h>
+#import "AppDelegate.h"
+#import "SFavoriteDB.h"
+//#import "CustemCalloutViewViewController.h"
+#import "CMPopTipView.h"
+#import "MesureTools.h"
+
+#import "PopoverView.h"
+
+#import "SVProgressHUD.h"
+
+#import "Rate.h"
+#import "Shop.h"
+#import "Food.h"
+#import "Offers.h"
+#import "CommentViewController.h"
+#import "MyFavoritesTableViewCell.h"
+#import "MyCommentTableViewCell.h"
+#import "ASIFormDataRequest.h"
+#import "Comment.h"
+#import "User.h"
+#import "MyMD5.h"
+
+#import "DataTableSeachMessege.h"
+#import "ShopSearchSpec.h"
+#import "ResultTableViewController.h"
+#import "ShopDetailTableViewController.h"
+#import "ResultTableViewController.h"
+#import "AddShopViewController.h"
+#import "ShopUpdateViewController.h"
+
+#import "Helper.h"
+
+#import "ViewController.h"
+#endif
+#define LocalURL(x,y) [NSString stringWithFormat:@"http://59.175.169.211:7003/JMService/JMService.svc/?servicename=jm&x=%.3f&y=%.3f",x,y]
+
+#define KewWordSearch(keyword,class) [NSString stringWithFormat:@"http://27.17.60.11:8082/rest/searchMoreIOS/%@ %@/0",keyword,class]
+
+#define RoundSearch(keyword,xmin,ymin,xmax,ymax,page) [NSString stringWithFormat:@"http://27.17.60.11:8082/rest/searchOnGISViewIOS/%@/%@,%@,%@,%@/%d",keyword,xmin,ymin,xmax,ymax,page]
+
+#define chinaURLGetTile(url,layerName,tileMatrixSet,column,row,level) [NSString stringWithFormat:@"%@?service=wmts&request=gettile&version=1.0.0&layer=%@&format=tiles&tilematrixset=%@&tilecol=%d&tilerow=%d&tilematrix=%d",url,layerName,tileMatrixSet,column,row,level]
+#define hubeiURLGetTile(url,layerName,tileMatrixSet,level,row,column) [NSString stringWithFormat:@"%@?service=wmts&request=gettile&version=1.0.0&style=Default&layer=%@&format=image/png&tilematrixset=%@&tilematrix=%d&TileRow=%d&TileCol=%d",url,layerName,tileMatrixSet,level,row,column]
+
+
+
+//老河口美食地址
+//http://114.215.158.76/foodmap/index.php/Home/
+
+//登录检查
+#define CheckLogin [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/Index/checkLogin"]
+
+
+#define ShopList(keyword,category,lat,lng,scope,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops?keyword=%@&category=%d&lat=%.3f&lng=%.3f&scope=%f&page=%d",keyword,category,lat,lng,scope,page]
+#define ShopDetail(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+
+//获取推荐美食店铺
+#define Recommends(lat,lng,category,scope,page)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/recommends?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
+
+//获取美食优惠信息
+#define Offers(lat,lng,category,scope,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
+//3 店铺评价 POST user_id,overall,taste,environment
+#define ShopComments(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/comments",id]
+
+//6 意见反馈 POST name content
+#define Suggestions [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/suggestions"]
+
+
+//7 用户注册 POST name email phone password
+#define Users [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users"]
+
+//8 获取用户收藏列表
+#define Collections(userid) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/collections",userid]
+
+//9 添加用户收藏 POSt
+#define ColletionsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/collections",id]
+
+//10 delete？
+#define CollectionsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/collections/%d",id]
+
+
+//11 获取用户评论列表
+#define UserComments(id)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/comments",id]
+
+//12 删除用户评论 delete
+#define CommentsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/comments/%d",id]
+
+//13 获取用户美食店铺列表
+#define UserShops(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/shops",id]
+
+//14 添加美食店铺 post
+
+#define ShopsAdd  [NSString stringWithFormat:@"http://114.215.158.76/foodmap/index.php/Rest/shops"]
+
+//15 更新美食店铺 put
+#define ShopsUpdate(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+
+//16 删除美食店铺 delete
+#define ShopsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+
+//17 获取美食店铺列表
+#define ShopsFoods(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/foods",id]
+
+
+//18 添加美食 POST
+#define ShopsFoodsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/foods",id]
+
+//19 更新美食 PUT
+#define FoodsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d",id]
+
+
+//20 删除美食 DElETE
+#define FoodsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d",id]
+
+//21 获取店铺优惠信息
+#define ShopsOffers(id,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/offers?page=%d",id,page]
+
+//22 添加优惠信息 POST
+#define FoodsOffersAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d/offers",id]
+
+//23 更新优惠信息 PUT
+#define ShopsOffersUpdate(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers/%d",id]
+
+//24 删除优惠信息 DELETE
+#define OffersDelete(id)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers/%d",id]
+
+
+

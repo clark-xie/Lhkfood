@@ -1,0 +1,186 @@
+
+/* Class = "IBUILabel"; text = "关于我们"; ObjectID = "03g-vj-mn3"; */
+"03g-vj-mn3.text" = "关于我们";
+
+/* Class = "IBUILabel"; text = "cell1"; ObjectID = "0H8-5S-1n3"; */
+"0H8-5S-1n3.text" = "cell1";
+
+/* Class = "IBUIButton"; normalTitle = "评价"; ObjectID = "1t1-7h-mmU"; */
+"1t1-7h-mmU.normalTitle" = "评价";
+
+/* Class = "IBUITextField"; text = "人均消费"; ObjectID = "25o-aN-91R"; */
+"25o-aN-91R.text" = "人均消费";
+
+/* Class = "IBUIButton"; normalTitle = "选择图片"; ObjectID = "2vR-oy-pWa"; */
+"2vR-oy-pWa.normalTitle" = "选择图片";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "3Dd-bt-ZNV"; */
+"3Dd-bt-ZNV.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "香酥鸭"; ObjectID = "3Jx-fx-kSC"; */
+"3Jx-fx-kSC.text" = "香酥鸭";
+
+/* Class = "IBUILabel"; text = "阿狸"; ObjectID = "4CZ-9R-AxO"; */
+"4CZ-9R-AxO.text" = "阿狸";
+
+/* Class = "IBUINavigationItem"; title = "内容"; ObjectID = "4IA-FE-e0J"; */
+"4IA-FE-e0J.title" = "内容";
+
+/* Class = "IBUILabel"; text = "您的姓名："; ObjectID = "4Rh-oV-JXY"; */
+"4Rh-oV-JXY.text" = "您的姓名：";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "59H-BE-0EE"; */
+"59H-BE-0EE.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "提交"; ObjectID = "5bK-vY-BKq"; */
+"5bK-vY-BKq.normalTitle" = "提交";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "5xx-6d-XlQ"; */
+"5xx-6d-XlQ.title" = "Title";
+
+/* Class = "IBUITableViewController"; title = "我的收藏"; ObjectID = "7SX-cp-KxD"; */
+"7SX-cp-KxD.title" = "我的收藏";
+
+/* Class = "IBUILabel"; text = "新手帮助"; ObjectID = "7p5-fX-Efo"; */
+"7p5-fX-Efo.text" = "新手帮助";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "8rO-L0-LBT"; */
+"8rO-L0-LBT.title" = "Title";
+
+/* Class = "IBUILabel"; text = "营业时间"; ObjectID = "9ZB-UI-m5M"; */
+"9ZB-UI-m5M.text" = "营业时间";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "ABQ-vG-EMr"; */
+"ABQ-vG-EMr.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "美食地图"; ObjectID = "EIA-gg-giL"; */
+"EIA-gg-giL.title" = "美食地图";
+
+/* Class = "IBUILabel"; text = "8:00-22:00"; ObjectID = "H9g-PN-R5l"; */
+"H9g-PN-R5l.text" = "8:00-22:00";
+
+/* Class = "IBUILabel"; text = "老河口市北京西路380号"; ObjectID = "Iwm-tK-Cl2"; */
+"Iwm-tK-Cl2.text" = "老河口市北京西路380号";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "JFE-jg-pGy"; */
+"JFE-jg-pGy.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "JzD-cH-Shp"; */
+"JzD-cH-Shp.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Ktu-hy-RYg"; */
+"Ktu-hy-RYg.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "关于我们"; ObjectID = "L1G-b9-zoi"; */
+"L1G-b9-zoi.title" = "关于我们";
+
+/* Class = "IBUILabel"; text = "反馈意见"; ObjectID = "NHh-vp-Plh"; */
+"NHh-vp-Plh.text" = "反馈意见";
+
+/* Class = "IBUILabel"; text = "欢迎提供宝贵的意见和建议："; ObjectID = "NM8-Qy-hNx"; */
+"NM8-Qy-hNx.text" = "欢迎提供宝贵的意见和建议：";
+
+/* Class = "IBUINavigationItem"; title = "美食评价"; ObjectID = "Ow1-KB-UQb"; */
+"Ow1-KB-UQb.title" = "美食评价";
+
+/* Class = "IBUILabel"; text = "老村长私募菜"; ObjectID = "PsK-zO-RRd"; */
+"PsK-zO-RRd.text" = "老村长私募菜";
+
+/* Class = "IBUIBarButtonItem"; title = "评论"; ObjectID = "R4V-hT-JXS"; */
+"R4V-hT-JXS.title" = "评论";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "RDO-re-nGe"; */
+"RDO-re-nGe.normalTitle" = "Button";
+
+/* Class = "IBUINavigationItem"; title = "登录"; ObjectID = "Rdl-zq-L9W"; */
+"Rdl-zq-L9W.title" = "登录";
+
+/* Class = "IBUINavigationItem"; title = "更多"; ObjectID = "SA8-GB-gYL"; */
+"SA8-GB-gYL.title" = "更多";
+
+/* Class = "IBUIViewController"; title = "添加美食店铺"; ObjectID = "TNh-Wv-du1"; */
+"TNh-Wv-du1.title" = "添加美食店铺";
+
+/* Class = "IBUILabel"; text = "口味5(非常好) 环境5(非常好) 服务5(非常好)"; ObjectID = "V4w-Kl-cDY"; */
+"V4w-Kl-cDY.text" = "口味5(非常好) 环境5(非常好) 服务5(非常好)";
+
+/* Class = "IBUINavigationItem"; title = "新手帮助"; ObjectID = "XEl-i0-3Gy"; */
+"XEl-i0-3Gy.title" = "新手帮助";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "YA6-qc-tTL"; */
+"YA6-qc-tTL.normalTitle" = "Button";
+
+/* Class = "IBUIBarButtonItem"; title = "列表"; ObjectID = "YDu-Q7-up5"; */
+"YDu-Q7-up5.title" = "列表";
+
+/* Class = "IBUITabBarItem"; title = "我的"; ObjectID = "ZVF-Wj-AoS"; */
+"ZVF-Wj-AoS.title" = "我的";
+
+/* Class = "IBUINavigationItem"; title = "查询结果"; ObjectID = "Zto-0g-cVD"; */
+"Zto-0g-cVD.title" = "查询结果";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "a3N-ZE-3fx"; */
+"a3N-ZE-3fx.normalTitle" = "Button";
+
+/* Class = "IBUIViewController"; title = "用户注册"; ObjectID = "bnx-Tf-TbK"; */
+"bnx-Tf-TbK.title" = "用户注册";
+
+/* Class = "IBUINavigationItem"; title = "反馈意见"; ObjectID = "c5U-LD-6dD"; */
+"c5U-LD-6dD.title" = "反馈意见";
+
+/* Class = "IBUILabel"; text = "我要注册"; ObjectID = "dZ2-LL-dne"; */
+"dZ2-LL-dne.text" = "我要注册";
+
+/* Class = "IBUILabel"; text = "忘记密码"; ObjectID = "fXy-aZ-ghN"; */
+"fXy-aZ-ghN.text" = "忘记密码";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ft5-tZ-q7m"; */
+"ft5-tZ-q7m.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "gGq-06-3af"; */
+"gGq-06-3af.text" = "Label";
+
+/* Class = "IBUISearchBar"; gl1-y2-XDN.scopeButtonTitles[0] = "Title"; ObjectID = "gl1-y2-XDN"; */
+"gl1-y2-XDN.scopeButtonTitles[0]" = "Title";
+
+/* Class = "IBUISearchBar"; gl1-y2-XDN.scopeButtonTitles[1] = "Title"; ObjectID = "gl1-y2-XDN"; */
+"gl1-y2-XDN.scopeButtonTitles[1]" = "Title";
+
+/* Class = "IBUITableViewController"; title = "我的评论"; ObjectID = "hIp-Gy-Mjd"; */
+"hIp-Gy-Mjd.title" = "我的评论";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "hvd-c7-3yb"; */
+"hvd-c7-3yb.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = " 问问  AFAF阿斯顿发生的发生福"; ObjectID = "j1b-RF-h7Q"; */
+"j1b-RF-h7Q.text" = " 问问  AFAF阿斯顿发生的发生福";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "kDN-VT-h0m"; */
+"kDN-VT-h0m.normalTitle" = "Button";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "kSh-b2-KUL"; */
+"kSh-b2-KUL.title" = "Title";
+
+/* Class = "IBUILabel"; text = "至"; ObjectID = "nh3-YB-bhC"; */
+"nh3-YB-bhC.text" = "至";
+
+/* Class = "IBUIButton"; normalTitle = "拍照"; ObjectID = "npl-eS-Gbf"; */
+"npl-eS-Gbf.normalTitle" = "拍照";
+
+/* Class = "IBUIButton"; normalTitle = "找回密码"; ObjectID = "ojr-a0-143"; */
+"ojr-a0-143.normalTitle" = "找回密码";
+
+/* Class = "IBUILabel"; text = "光谷天地店"; ObjectID = "qRs-X7-lYw"; */
+"qRs-X7-lYw.text" = "光谷天地店";
+
+/* Class = "IBUINavigationItem"; title = "商铺详情"; ObjectID = "tYP-JY-c6l"; */
+"tYP-JY-c6l.title" = "商铺详情";
+
+/* Class = "IBUILabel"; text = "软件更新"; ObjectID = "v6z-Y4-zxp"; */
+"v6z-Y4-zxp.text" = "软件更新";
+
+/* Class = "IBUILabel"; text = "人均消费"; ObjectID = "yUm-4g-fcJ"; */
+"yUm-4g-fcJ.text" = "人均消费";
+
+/* Class = "IBUILabel"; text = "52元"; ObjectID = "zgC-Ms-ZLW"; */
+"zgC-Ms-ZLW.text" = "52元";
