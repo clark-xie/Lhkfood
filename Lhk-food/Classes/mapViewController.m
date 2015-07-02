@@ -421,5 +421,9 @@
 }
 
 
+- (IBAction)close:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 @end

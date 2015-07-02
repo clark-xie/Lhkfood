@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D5920A7-3E23-4DBE-9204-57C9A154C7F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lhk-food</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>71E48D0665D54C3804BEFDF893305D10879EDEDB</key>
+		<string>https://github.com/happyxiechao/Lhkfood.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lhk-food.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>71E48D0665D54C3804BEFDF893305D10879EDEDB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/happyxiechao/Lhkfood.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>71E48D0665D54C3804BEFDF893305D10879EDEDB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>71E48D0665D54C3804BEFDF893305D10879EDEDB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lhkfood</string>
+		</dict>
+	</array>
+</dict>
+</plist>

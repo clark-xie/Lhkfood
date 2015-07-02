@@ -17,4 +17,6 @@
 @property NSNumber *enviroment;
 @property NSNumber *service;
 @property Shop  *shop;//店铺类型
+
+-(id) initWithDictionary:(NSDictionary *)dic;
 @end

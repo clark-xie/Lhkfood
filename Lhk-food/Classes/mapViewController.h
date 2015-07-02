@@ -30,5 +30,9 @@
 - (IBAction)zoomin:(id)sender ;
 - (IBAction)zoomout:(id)sender ;
 - (IBAction)showLocation:(id)sender;
+
+//关闭当前窗体，显示信息详情
+- (IBAction)close:(id)sender ;
+
 @end
 
