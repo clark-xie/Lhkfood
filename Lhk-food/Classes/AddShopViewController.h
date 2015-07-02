@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LMImage.h"
 
 typedef enum : NSUInteger {
     AddShopTypeAdd,
@@ -14,7 +15,7 @@ typedef enum : NSUInteger {
     
 } AddShopType;
 
-@interface AddShopViewController : UITableViewController<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface AddShopViewController : UITableViewController<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,LMImageDelegate>
 @property ASIFormDataRequest *asiFormDataRequest;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *selectImage;
@@ -25,6 +26,7 @@ typedef enum : NSUInteger {
 @property (weak, nonatomic) IBOutlet UITextField *starttime;
 @property (weak, nonatomic) IBOutlet UITextField *endtime;
 @property (weak, nonatomic) IBOutlet UITextField *avg_price;   //人均消费
+@property (weak, nonatomic) IBOutlet UILabel *foodtype;
 
 //店铺的值
 @property (nonatomic,strong) Shop *shop;

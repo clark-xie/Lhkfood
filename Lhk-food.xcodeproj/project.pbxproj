@@ -243,6 +243,7 @@
 		F4A36E9419F790FA00F3823D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A36E9319F790FA00F3823D /* MainViewController.m */; };
 		F4A36E9819F795A100F3823D /* ShopSearchSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A36E9719F795A100F3823D /* ShopSearchSpec.m */; };
 		F4A36EA219F8A2AF00F3823D /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A36EA119F8A2AF00F3823D /* Shop.m */; };
+		F4A536011B4527DB00053C67 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A535FF1B4527DB00053C67 /* BaseViewController.m */; };
 		F4AD52CB1A1CAB8100104217 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AD52BB1A1CAB8100104217 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4AD52CC1A1CAB8100104217 /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AD52BD1A1CAB8100104217 /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4AD52CD1A1CAB8100104217 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AD52BF1A1CAB8100104217 /* MessageInterceptor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -717,6 +718,8 @@
 		F4A36E9719F795A100F3823D /* ShopSearchSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopSearchSpec.m; sourceTree = "<group>"; };
 		F4A36EA019F8A2AF00F3823D /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
 		F4A36EA119F8A2AF00F3823D /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		F4A535FF1B4527DB00053C67 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F4A536001B4527DB00053C67 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F4AD52BA1A1CAB8100104217 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		F4AD52BB1A1CAB8100104217 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		F4AD52BC1A1CAB8100104217 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
@@ -1726,6 +1729,8 @@
 		F4A36E9519F7940100F3823D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F4A535FF1B4527DB00053C67 /* BaseViewController.m */,
+				F4A536001B4527DB00053C67 /* BaseViewController.h */,
 				F4B839FF1A164834007DB166 /* DataTableSeachMessege.h */,
 				F4B83A001A164834007DB166 /* DataTableSeachMessege.m */,
 				F4F3B1661A01246D00BF365E /* GroupTable.m */,
@@ -2346,6 +2351,7 @@
 				F470F9DC1A2358FF0022B67C /* tree.c in Sources */,
 				DBEBCBA5179D1BBA00D8C1DE /* MarkNameView.m in Sources */,
 				F45D29061A369B570066E887 /* UIView+IQKeyboardToolbar.m in Sources */,
+				F4A536011B4527DB00053C67 /* BaseViewController.m in Sources */,
 				DBEBCBA7179D1BBA00D8C1DE /* MesureTools.m in Sources */,
 				F484894E1A0B8FFF006A2C86 /* Rate.m in Sources */,
 				F4F3B12819FA3C1A00BF365E /* Food.m in Sources */,

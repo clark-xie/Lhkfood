@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyOffeTableViewController : UITableViewController
-
+@interface MyOffeTableViewController : UITableViewController<ASIHTTPRequestDelegate>
+@property  ASIFormDataRequest *asiFormDataRequest;
+//查询参数
+@property (nonatomic,strong) ShopSearchSpec *shopSearchSpec;
 @end

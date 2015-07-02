@@ -52,7 +52,7 @@
     
     
     self.asiFormDataRequest = [[ASIFormDataRequest alloc] initWithURL:url];
-    [self.asiFormDataRequest setPostValue:self.food.name forKey:@"food_name" ];
+    [self.asiFormDataRequest setPostValue:self.food.food_name forKey:@"food_name" ];
     [self.asiFormDataRequest setPostValue:self.food.desc forKey:@"food_desc" ];
     [self.asiFormDataRequest setPostValue:self.food.price forKey:@"food_price" ];
 //    [self.asiFormDataRequest setPostValue:self.food.image forKey:@"food_images" ]; //image在这里应该使用列表类型，只存储图片的名称
@@ -287,7 +287,7 @@
     NSNumber *price = [f numberFromString:self.foodprice.text];
     
     self.food.price = price;
-    self.food.name = self.foodname.text;
+    self.food.food_name = self.foodname.text;
     self.food.desc = self.fooddesc.text;
     
     [self dataPost];

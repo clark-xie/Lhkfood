@@ -10,17 +10,20 @@
 
 @interface Offers : NSObject
 
-@property NSNumber *id;
-@property NSNumber *food_id;
-@property NSNumber *is_valid;
-@property NSDate *valid_from;
-@property NSDate *valid_to;
-@property NSNumber *newprice;
+@property (nonatomic,strong) NSNumber *offer_id;
+@property (nonatomic,strong) NSNumber *food_id;
+@property (nonatomic,strong) NSNumber *is_valid;
+@property (nonatomic,strong) NSDate *valid_from;
+@property (nonatomic,strong) NSDate *valid_to;
+@property (nonatomic,strong) NSNumber *newprice;
 @property (nonatomic,strong) NSString *comment;
 
 
 @property (nonatomic,strong) Food *food;  //食物信息
 @property (nonatomic,strong) Shop *shop;   //店铺信息
+
+
+-(id) initWithDictionary:(NSDictionary *)dic;
 
 //@property NSNumber *shopid;
 //@property NSString *name;

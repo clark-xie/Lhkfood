@@ -135,7 +135,7 @@
                 NSDictionary *tmp21 = [tmp2 objectAtIndex:i];
                 
                 Food *food = [[Food alloc] init];
-                food.name= [tmp21 objectForKey:@"food_name"];
+                food.food_name= [tmp21 objectForKey:@"food_name"];
                 food.desc = [tmp21 objectForKey:@"food_desc"];
                 food.image = [tmp21 objectForKey:@"food_images"];
                 food.rate =[tmp21 objectForKey:@"rate"];
@@ -235,7 +235,7 @@
         cell.name.text = self.shopDetail.shop.name;
         cell.avgMoney.text =  [ NSString stringWithFormat:@"%.2f",[self.shopDetail.shop.avg_spend floatValue]];
         //显示图片的
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",self.shopDetail.shop.shop_images];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",self.shopDetail.shop.shop_images];
         
         [cell.detailimg sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"userImage"]];
         cell.rateImage.image = [Rate imageFromRate:self.shopDetail.shop.rate];
@@ -267,10 +267,10 @@
     else if([indexPath section] ==3){
         ShopDetailFoodTableViewCell *cell=(ShopDetailFoodTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cell4" forIndexPath:indexPath];
          Food *food= [self.shopDetail.foods objectAtIndex:[indexPath row]];
-        cell.name.text = food.name;
+        cell.name.text = food.food_name;
         cell.desc.text = food.desc;
         //显示图片的
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",food.image];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",food.image];
         
         [cell.image sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
         return cell;

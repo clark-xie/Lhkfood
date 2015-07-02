@@ -63,83 +63,88 @@
 
 //老河口美食地址
 //http://114.215.158.76/foodmap/index.php/Home/
+//http://111.47.52.51:3000/lhkfood/index.php/Rest
+
+
 
 //登录检查
-#define CheckLogin [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/Index/checkLogin"]
+#define CheckLogin [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/Index/checkLogin"]
 
-
-#define ShopList(keyword,category,lat,lng,scope,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops?keyword=%@&category=%d&lat=%.3f&lng=%.3f&scope=%f&page=%d",keyword,category,lat,lng,scope,page]
-#define ShopDetail(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+//老河口地址
+#define ShopList(keyword,category,lat,lng,scope,page) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops?keyword=%@&category=%d&lat=%.3f&lng=%.3f&scope=%f&page=%d",keyword,category,lat,lng,scope,page]
+#define ShopDetail(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d",id]
 
 //获取推荐美食店铺
-#define Recommends(lat,lng,category,scope,page)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/recommends?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
+#define Recommends(lat,lng,category,scope,page)  [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/recommends?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
 
 //获取美食优惠信息
-#define Offers(lat,lng,category,scope,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
+#define Offers(lat,lng,category,scope,page) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/offers?lat=%f&lng=%f&category=%d&scope=%f&page=%d",lat,lng,category,scope,page]
 //3 店铺评价 POST user_id,overall,taste,environment
-#define ShopComments(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/comments",id]
+#define ShopComments(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d/comments",id]
 
 //6 意见反馈 POST name content
-#define Suggestions [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/suggestions"]
+#define Suggestions [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/suggestions"]
 
 
 //7 用户注册 POST name email phone password
-#define Users [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users"]
+#define Users [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/users"]
 
 //8 获取用户收藏列表
-#define Collections(userid) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/collections",userid]
+#define Collections(userid) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/users/%d/collections",userid]
 
 //9 添加用户收藏 POSt
-#define ColletionsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/collections",id]
+#define ColletionsAdd(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/users/%d/collections",id]
 
 //10 delete？
-#define CollectionsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/collections/%d",id]
+#define CollectionsDelete(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/collections/%d",id]
 
 
 //11 获取用户评论列表
-#define UserComments(id)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/comments",id]
+#define UserComments(id)  [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/users/%d/comments",id]
 
 //12 删除用户评论 delete
-#define CommentsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/comments/%d",id]
+#define CommentsDelete(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/comments/%d",id]
 
 //13 获取用户美食店铺列表
-#define UserShops(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/users/%d/shops",id]
+#define UserShops(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/users/%d/shops",id]
 
 //14 添加美食店铺 post
 
-#define ShopsAdd  [NSString stringWithFormat:@"http://114.215.158.76/foodmap/index.php/Rest/shops"]
+#define ShopsAdd  [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops"]
 
 //15 更新美食店铺 put
-#define ShopsUpdate(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+#define ShopsUpdate(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d",id]
 
 //16 删除美食店铺 delete
-#define ShopsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d",id]
+#define ShopsDelete(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d",id]
 
 //17 获取美食店铺列表
-#define ShopsFoods(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/foods",id]
+#define ShopsFoods(id,page) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d/foods/page=%d",id,page]
 
 
 //18 添加美食 POST
-#define ShopsFoodsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/foods",id]
+#define ShopsFoodsAdd(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d/foods",id]
 
 //19 更新美食 PUT
-#define FoodsAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d",id]
+#define FoodsAdd(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/foods/%d",id]
 
 
 //20 删除美食 DElETE
-#define FoodsDelete(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d",id]
+#define FoodsDelete(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/foods/%d",id]
 
 //21 获取店铺优惠信息
-#define ShopsOffers(id,page) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/shops/%d/offers?page=%d",id,page]
+#define ShopsOffers(id,page) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/shops/%d/offers?page=%d",id,page]
 
 //22 添加优惠信息 POST
-#define FoodsOffersAdd(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/foods/%d/offers",id]
+#define FoodsOffersAdd(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/foods/%d/offers",id]
 
 //23 更新优惠信息 PUT
-#define ShopsOffersUpdate(id) [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers/%d",id]
+#define ShopsOffersUpdate(id) [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/offers/%d",id]
 
 //24 删除优惠信息 DELETE
-#define OffersDelete(id)  [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/index.php/Rest/offers/%d",id]
+#define OffersDelete(id)  [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/offers/%d",id]
 
+
+#define UpdateImage [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/index.php/Rest/Index/upload_img"]
 
 

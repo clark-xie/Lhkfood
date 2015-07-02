@@ -29,7 +29,7 @@ bool searchBarClick =false;
     [super viewDidLoad];
     
     //设置键盘不进行上下移动
-//    [[IQKeyboardManager sharedManager] setEnable:NO];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
 
 //    [inputHelper setupInputHelperForView:self.view withDismissType:InputHelperDismissTypeTapGusture doneBlock:^(id res){
 //        
@@ -296,7 +296,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     searchBarClick = true;
     
     [self.searchBar setShowsCancelButton:YES animated:YES];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [self.searchHistory setArray: [self.dateTable selectSearchMesWihtNum:10]];  //设置查询历史结果
 
     [self.tableView reloadData];
@@ -323,6 +323,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     self.shpec.key = searchBar.text;  //设置查询参数
     self.shpec.category = [NSNumber numberWithInt:0];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    //点击查询按钮后的动作
     [self performSegueWithIdentifier:@"searchResultSegue" sender:searchBar];
 }
 

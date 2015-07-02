@@ -105,7 +105,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     HeadView* headView = [self.headViewArray objectAtIndex:section];
-    NSInteger n = [[[self.category objectAtIndex:section] objectForKey:@"list"] count];
+//    NSInteger n = [[[self.category objectAtIndex:section] objectForKey:@"list"] count];
+    NSInteger n = 1;
     return headView.open?n:0;
 }
 

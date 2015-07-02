@@ -30,6 +30,7 @@
     MyPageControl *_pageControl;
     UITableView *_tableView;
     AGSQueryTask *_queryTask;
+    
 	AGSQuery *_query;
 	AGSFeatureSet *_featureSet;
     KSearchDetailsView *_kSearchDetailsView;

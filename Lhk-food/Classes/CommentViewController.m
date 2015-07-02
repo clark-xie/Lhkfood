@@ -35,7 +35,7 @@
     
     self.price.text =  [ NSString stringWithFormat:@"%.2f",[self.shop.avg_spend floatValue]];
     //显示图片
-    NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",self.shop.shop_images];
+    NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",self.shop.shop_images];
     
     [self.shopImage sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
     

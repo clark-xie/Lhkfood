@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.rowHeight = Comment_Row_Height;
+//    self.tableView.rowHeight = Comment_Row_Height;
     self.deleteing = false;  //进来时不是编辑状态
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -61,8 +61,10 @@
         
         cell.shopName.text = comment.shop.name;
         
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",comment.shop.shop_images];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",comment.shop.shop_images];
         [cell.shopImage sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
+        cell.rateImage.image = [Rate imageFromRate:comment.shop.rate];
+        cell.rate.text = [NSString stringWithFormat:@"整体%.1f 口味%0.1f 环境%0.1f 服务%0.1f",[comment.rate floatValue ],[comment.taste floatValue],[comment.enviroment floatValue],[comment.service floatValue]];
         
     }
     // Configure the cell...
@@ -171,18 +173,19 @@
         for(int i =0 ; i < [resultArrary count];i++)
         {
             NSDictionary * dic = [resultArrary objectAtIndex:i];
-            Comment *commnet = [[Comment alloc]init];
-            commnet.commentid = [dic  objectForKey:@"id"];
-            
+            Comment *comment = [[Comment alloc]initWithDictionary:dic];
+//            comment.commentid = [dic  objectForKey:@"id"];
+//            comment.taste = [dic objectForKey:@"taste"];
+////            comment.
             Shop *shop = [[Shop alloc]initWithDictionary:dic];
-            
+
 //            Shop *shop = [[Shop alloc] init];
 //            shop.shopid = [dic  objectForKey:@"shop_id"];
 //            shop.name = [dic objectForKey:@"shop_name"];
 //            shop.address =[dic objectForKey:@"address"];
 //            shop.shop_images = [dic objectForKey:@"shop_images"];
-            commnet.shop = shop;
-            [self.resultArrary addObject:commnet];
+            comment.shop = shop;
+            [self.resultArrary addObject:comment];
             NSLog(@"%@",resultArrary);
         }
         

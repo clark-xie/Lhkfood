@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MyOffeTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *foodimage;
 
+@property (weak, nonatomic) IBOutlet UILabel *foodname;
+@property (weak, nonatomic) IBOutlet UILabel *foodprice;
+@property (weak, nonatomic) IBOutlet UILabel *foodsaleprice;
 @end

@@ -59,8 +59,9 @@
         cell.shopname.text =shop.name;
         cell.address.text = shop.address;
 //        cell.shopImage.text = 
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",shop.shop_images];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",shop.shop_images];
         [cell.shopImage sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
+        cell.rateImage.image = [Rate imageFromRate:shop.rate];
     }
     
     // Configure the cell...

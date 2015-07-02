@@ -626,7 +626,7 @@
         cell.imageView.image = [Rate imageFromRate:shop.rate];
         
         //显示图片的
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",shop.shop_images];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",shop.shop_images];
         [cell.shopimge sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
 
         

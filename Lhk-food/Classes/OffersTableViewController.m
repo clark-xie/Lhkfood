@@ -9,6 +9,7 @@
 #import "OffersTableViewController.h"
 #import "OffersTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "Helper.h"
 
 @interface OffersTableViewController ()
 @property NSMutableArray *resultArray;  //搜索结果列表
@@ -60,12 +61,13 @@
     {
         Offers *offer =[self.resultArray objectAtIndex:[indexPath row]];
         cell1.shopName.text = offer.shop.name;
-        cell1.foodOffers.text = offer.food.name;
+        cell1.foodOffers.text = offer.food.food_name;
         cell1.address.text = offer.shop.address;
-        NSString *str = [NSString stringWithFormat:@"http://114.215.158.76/foodmap2/Upload/Images/%@",offer.shop.shop_images];
+        NSString *str = [NSString stringWithFormat:@"http://111.47.52.51:3000/lhkfood/Upload/Thumbs/%@",offer.shop.shop_images];
         [cell1.foodImage sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed: @"foodexmaple"]];
         
         cell1.offerDate.text = [NSString stringWithFormat:@"优惠日期  %@-%@",[Helper stringFromDate:offer .valid_from ], [Helper stringFromDate:offer.valid_to] ];
+        cell1.rateImage.image = [Rate imageFromRate:offer.shop.rate];
     }
     
     // Configure the cell...
@@ -181,18 +183,16 @@
             
             shop.name = name;
             shop.address  = address;
-            food.name = foodname;
+            food.food_name = foodname;
             shop.shop_images = image;
+            //设置rate
+            shop.rate = [Helper numberFromString: [tmps objectForKey:@"rate"]];
             offer.valid_from = [Helper dateFromString:date_from];
             offer.valid_to =[Helper dateFromString:date_to];
             
             offer.shop = shop;
             offer.food = food;
             
-            //            shop.rate =rate;
-            
-            //        self.shopSearchSpec.key = str;
-            //        [resultArrary add]
             [self.resultArray addObject:offer];//临时使用，应该使用一个类代替
             NSLog(@"%@",shop.address);
             
@@ -200,8 +200,9 @@
         NSLog(@"店铺数量是 %d",[resultArrary count]);
         //        _testLabel.text = str;
         [self.tableView  reloadData];
-        [SVProgressHUD dismiss];
         }
+        [SVProgressHUD dismiss];
+
         
     }
 }

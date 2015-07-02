@@ -23,15 +23,44 @@ typedef enum : NSUInteger{
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //后退按钮不显示文字
     UIBarButtonItem *backItem=[[UIBarButtonItem alloc]init];
     backItem.title=@"";
     backItem.image=[UIImage imageNamed:@""];
     self.navigationItem.backBarButtonItem=backItem;
     
     //设置登录提示的框
-    [self setLoginCell];
 
     
+}
+-(void) viewWillAppear:(BOOL)animated
+{
+ 
+//    NSDate*date = [NSDate date];
+//    
+//    NSCalendar*calendar = [NSCalendar currentCalendar];
+//    
+//    NSDateComponents*comps;
+//    
+//
+//    comps =[calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit |NSSecondCalendarUnit)
+//            
+//                       fromDate:date];
+////    
+////    NSIntegerhour = [comps hour];
+////    
+////    NSIntegerminute = [comps minute];
+////    
+////    NSIntegersecond = [comps second];
+//    
+//    NSLog(@"hour:%d minute: %d second: %d", [comps hour], [comps minute], [comps second]);
+//
+//    
+//    
+////    NSDate *date = [[NSDate alloc] init];
+//    _userName.text = [NSString stringWithFormat:@"%d", [comps second]];
+    [self setLoginCell];
+
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
