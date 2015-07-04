@@ -17,6 +17,7 @@
     if (self)
     {
         //just a test for delverop
+        //add a other
         
     }
     return self;
