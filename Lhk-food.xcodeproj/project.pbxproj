@@ -83,8 +83,6 @@
 		DBEBCBBE179D1BBA00D8C1DE /* WMTSmetadataParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBCA5A179D1BB900D8C1DE /* WMTSmetadataParserDelegate.m */; };
 		DBEBCBC3179D1BBA00D8C1DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBEBCA60179D1BB900D8C1DE /* InfoPlist.strings */; };
 		DBEBCBC4179D1BBA00D8C1DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEBCA62179D1BB900D8C1DE /* ViewController.xib */; };
-		DBEBCC0F179D1BBA00D8C1DE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBEBCAB0179D1BB900D8C1DE /* logo.jpg */; };
-		DBEBCC73179D1BBA00D8C1DE /* 领导工作底图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBEBCB16179D1BBA00D8C1DE /* 领导工作底图.jpg */; };
 		DBEBCC74179D1BBA00D8C1DE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBCB1A179D1BBA00D8C1DE /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DBEBCC75179D1BBA00D8C1DE /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBCB1D179D1BBA00D8C1DE /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DBEBCC76179D1BBA00D8C1DE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBCB1F179D1BBA00D8C1DE /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -218,8 +216,6 @@
 		F4F3B12819FA3C1A00BF365E /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B12719FA3C1A00BF365E /* Food.m */; };
 		F4F3B12E19FA3C7F00BF365E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B12D19FA3C7F00BF365E /* Comment.m */; };
 		F4F3B13119FAC01700BF365E /* ShopAddressPhonelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B13019FAC01700BF365E /* ShopAddressPhonelTableViewCell.m */; };
-		F4F3B14D19FD334600BF365E /* up_guide2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4F3B13619FD334600BF365E /* up_guide2.jpg */; };
-		F4F3B14E19FD334600BF365E /* up_guide2-568h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4F3B13719FD334600BF365E /* up_guide2-568h.jpg */; };
 		F4F3B16519FFCB6800BF365E /* Recommend.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B16419FFCB6800BF365E /* Recommend.m */; };
 		F4F3B16A1A01246D00BF365E /* GroupTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B1661A01246D00BF365E /* GroupTable.m */; };
 		F4F3B16B1A01246D00BF365E /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B1681A01246D00BF365E /* DataBase.m */; };
@@ -354,8 +350,6 @@
 		DBEBCA5F179D1BB900D8C1DE /* Lhk-food-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lhk-food-Prefix.pch"; sourceTree = "<group>"; };
 		DBEBCA61179D1BB900D8C1DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBEBCA63179D1BB900D8C1DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		DBEBCAB0179D1BB900D8C1DE /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
-		DBEBCB16179D1BBA00D8C1DE /* 领导工作底图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "领导工作底图.jpg"; sourceTree = "<group>"; };
 		DBEBCB19179D1BBA00D8C1DE /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		DBEBCB1A179D1BBA00D8C1DE /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		DBEBCB1B179D1BBA00D8C1DE /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -610,8 +604,6 @@
 		F4F3B12D19FA3C7F00BF365E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		F4F3B12F19FAC01700BF365E /* ShopAddressPhonelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopAddressPhonelTableViewCell.h; sourceTree = "<group>"; };
 		F4F3B13019FAC01700BF365E /* ShopAddressPhonelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopAddressPhonelTableViewCell.m; sourceTree = "<group>"; };
-		F4F3B13619FD334600BF365E /* up_guide2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = up_guide2.jpg; path = dazhong/up_guide2.jpg; sourceTree = "<group>"; };
-		F4F3B13719FD334600BF365E /* up_guide2-568h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "up_guide2-568h.jpg"; path = "dazhong/up_guide2-568h.jpg"; sourceTree = "<group>"; };
 		F4F3B16319FFCB6800BF365E /* Recommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recommend.h; sourceTree = "<group>"; };
 		F4F3B16419FFCB6800BF365E /* Recommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recommend.m; sourceTree = "<group>"; };
 		F4F3B1661A01246D00BF365E /* GroupTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTable.m; sourceTree = "<group>"; };
@@ -728,7 +720,6 @@
 				DBEBC9E4179D1BB900D8C1DE /* AppDelegate.h */,
 				DBEBC9E5179D1BB900D8C1DE /* AppDelegate.m */,
 				DBEBC9E6179D1BB900D8C1DE /* Classes */,
-				DBEBCA65179D1BB900D8C1DE /* images */,
 				DBEBCB17179D1BBA00D8C1DE /* Libraries */,
 				DBEBCA62179D1BB900D8C1DE /* ViewController.xib */,
 				F4426D1519F503CE00D20C60 /* Images.xcassets */,
@@ -925,41 +916,6 @@
 				DBEBCA5A179D1BB900D8C1DE /* WMTSmetadataParserDelegate.m */,
 			);
 			path = TianDiTu2.0;
-			sourceTree = "<group>";
-		};
-		DBEBCA65179D1BB900D8C1DE /* images */ = {
-			isa = PBXGroup;
-			children = (
-				F4F3B13419FD332C00BF365E /* 大众点评 */,
-				F45D312F19F651B700AE3CC0 /* lhkimage */,
-				DBEBCA82179D1BB900D8C1DE /* drawable */,
-				DBEBCAC9179D1BB900D8C1DE /* image */,
-				DBEBCAEA179D1BB900D8C1DE /* images */,
-				DBEBCB16179D1BBA00D8C1DE /* 领导工作底图.jpg */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		DBEBCA82179D1BB900D8C1DE /* drawable */ = {
-			isa = PBXGroup;
-			children = (
-				DBEBCAB0179D1BB900D8C1DE /* logo.jpg */,
-			);
-			path = drawable;
-			sourceTree = "<group>";
-		};
-		DBEBCAC9179D1BB900D8C1DE /* image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
-		DBEBCAEA179D1BB900D8C1DE /* images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		DBEBCB17179D1BBA00D8C1DE /* Libraries */ = {
@@ -1176,13 +1132,6 @@
 				F45D290C1A3728D20066E887 /* CPTextViewPlaceholder.m */,
 			);
 			path = CPTextViewPlaceholder;
-			sourceTree = "<group>";
-		};
-		F45D312F19F651B700AE3CC0 /* lhkimage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = lhkimage;
 			sourceTree = "<group>";
 		};
 		F470FA2F1A23591A0022B67C /* SDWebImage */ = {
@@ -1461,15 +1410,6 @@
 			name = controller;
 			sourceTree = "<group>";
 		};
-		F4F3B13419FD332C00BF365E /* 大众点评 */ = {
-			isa = PBXGroup;
-			children = (
-				F4F3B13619FD334600BF365E /* up_guide2.jpg */,
-				F4F3B13719FD334600BF365E /* up_guide2-568h.jpg */,
-			);
-			name = "大众点评";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1555,12 +1495,8 @@
 				F4AD52D21A1CAB8100104217 /* blueArrow@2x.png in Resources */,
 				F4AD52D31A1CAB8100104217 /* grayArrow.png in Resources */,
 				C4D91B86198781A800AAFF4A /* KeyWordSearchView.xib in Resources */,
-				DBEBCC0F179D1BBA00D8C1DE /* logo.jpg in Resources */,
 				F45D28FE1A369B570066E887 /* IQKeyboardManager.bundle in Resources */,
-				F4F3B14E19FD334600BF365E /* up_guide2-568h.jpg in Resources */,
 				F4426D1319F4FB6F00D20C60 /* Main.storyboard in Resources */,
-				F4F3B14D19FD334600BF365E /* up_guide2.jpg in Resources */,
-				DBEBCC73179D1BBA00D8C1DE /* 领导工作底图.jpg in Resources */,
 				F4AD52CF1A1CAB8100104217 /* blackArrow.png in Resources */,
 				DBEBCC7B179D1BBA00D8C1DE /* Category.plist in Resources */,
 				DBEBCC7C179D1BBA00D8C1DE /* Citys.plist in Resources */,
