@@ -2,8 +2,8 @@
 //  ElseTableViewController.m
 //  Lhk-food
 //
-//  Created by 谢超 on 14/12/7.
-//  Copyright (c) 2014年 huwei. All rights reserved.
+//  Created by leadmap on 14/12/7.
+//  Copyright (c) 2014年 leadmap. All rights reserved.
 //
 
 #import "ElseTableViewController.h"
@@ -52,14 +52,15 @@
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    //去掉软件更新功能
-    //选择软件更新列
+//去掉版本更新功能
+//    //选择软件更新列
 //    if([indexPath row] == 2)
 //    {
 //    //版本更新判断
 //    [self onCheckVersion];
-//
+////    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更新" message:@"此版本为最新版本" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+////    alert.tag = 10001;
+////    [alert show];
 //    }
 }
 

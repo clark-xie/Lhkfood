@@ -2,7 +2,7 @@
 //  FavoriteMangerView.m
 //  MapViewDemo
 //
-//  Created by huwei on 12/3/12.
+//  Created by leadmap on 12/3/12.
 //
 //
 

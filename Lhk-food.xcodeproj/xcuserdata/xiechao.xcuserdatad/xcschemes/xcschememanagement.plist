@@ -6,8 +6,15 @@
 	<dict>
 		<key>DigitHubei_IPad.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Lhk-food copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Lhk-food.xcscheme</key>
 		<dict>
@@ -18,6 +25,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DB6A353C178BD8AF00B1EE93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F41FF5221B4E28D40001D970</key>
 		<dict>
 			<key>primary</key>
 			<true/>

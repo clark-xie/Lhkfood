@@ -2,7 +2,7 @@
 //  MarkNameView.m
 //  MapViewDemo
 //
-//  Created by huwei on 11/19/12.
+//  Created by leadmap on 11/19/12.
 //
 //
 

@@ -2,7 +2,7 @@
 //  HistoryObject.h
 //  MapViewDemo
 //
-//  Created by huwei on 11/29/12.
+//  Created by leadmap on 11/29/12.
 //
 //
 

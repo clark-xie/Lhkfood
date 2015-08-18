@@ -67,7 +67,7 @@
 
 -(void)hideDropDown:(UIButton *)b;
 -(void)showDropDown:(UIButton *)b;
-- (id)initDropDown:(UIButton *) b:(NSArray *)arr :(NSString*)key :(NSString*)select :(int)count;
+- (id)initDropDown:(UIButton *)b:(NSArray *)arr :(NSString*)key :(NSString*)select :(NSInteger )count;
 -(void)putKorR:(NSString*)key;
 -(void)putKeyWord:(NSString *)keyword;
 -(void)putKeyCode:(NSString *)keycode;

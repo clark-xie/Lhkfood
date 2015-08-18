@@ -2,8 +2,8 @@
 //  ShopUpdateViewController.m
 //  Lhk-food
 //
-//  Created by 谢超 on 14/10/31.
-//  Copyright (c) 2014年 huwei. All rights reserved.
+//  Created by leadmap on 14/10/31.
+//  Copyright (c) 2014年 leadmap. All rights reserved.
 //
 
 #import "ShopUpdateViewController.h"

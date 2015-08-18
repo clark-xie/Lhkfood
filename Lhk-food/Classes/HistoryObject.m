@@ -2,7 +2,7 @@
 //  HistoryObject.m
 //  MapViewDemo
 //
-//  Created by huwei on 11/29/12.
+//  Created by leadmap on 11/29/12.
 //
 //
 
@@ -16,7 +16,8 @@
     self = [super init];
     if (self)
     {
-        //just a test for delverop 
+        //just a test for delverop
+        //add a other
         
     }
     return self;

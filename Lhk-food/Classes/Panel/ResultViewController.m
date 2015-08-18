@@ -2,7 +2,7 @@
 //  ResultViewController.m
 //  MapViewDemo
 //
-//  Created by huwei on 1/16/13.
+//  Created by leadmap on 1/16/13.
 //
 //
 

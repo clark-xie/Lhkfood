@@ -2,7 +2,7 @@
 //  FooterView.h
 //  MapViewDemo
 //
-//  Created by huwei on 11/22/12.
+//  Created by leadmap on 11/22/12.
 //
 //
 

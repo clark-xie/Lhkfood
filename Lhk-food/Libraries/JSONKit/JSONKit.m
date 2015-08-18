@@ -1578,19 +1578,19 @@ static int jk_encode_add_atom_to_buffer(JKEncodeState *encodeState, void *object
 
   int isClass = JKClassUnknown;
 
-       if(object->isa == encodeState->fastClassLookup.stringClass)     { isClass = JKClassString;     }
-  else if(object->isa == encodeState->fastClassLookup.numberClass)     { isClass = JKClassNumber;     }
-  else if(object->isa == encodeState->fastClassLookup.arrayClass)      { isClass = JKClassArray;      }
-  else if(object->isa == encodeState->fastClassLookup.dictionaryClass) { isClass = JKClassDictionary; }
-  else if(object->isa == encodeState->fastClassLookup.nullClass)       { isClass = JKClassNull;       }
-  else {
-         if([object isKindOfClass:[NSString     class]]) { encodeState->fastClassLookup.stringClass     = object->isa; isClass = JKClassString;     }
-    else if([object isKindOfClass:[NSNumber     class]]) { encodeState->fastClassLookup.numberClass     = object->isa; isClass = JKClassNumber;     }
-    else if([object isKindOfClass:[NSArray      class]]) { encodeState->fastClassLookup.arrayClass      = object->isa; isClass = JKClassArray;      }
-    else if([object isKindOfClass:[NSDictionary class]]) { encodeState->fastClassLookup.dictionaryClass = object->isa; isClass = JKClassDictionary; }
-    else if([object isKindOfClass:[NSNull       class]]) { encodeState->fastClassLookup.nullClass       = object->isa; isClass = JKClassNull;       }
-    else { jk_encode_error(encodeState, @"Unable to serialize object class %@.", NSStringFromClass([object class])); return(1); }
-  }
+//       if(object->isa == encodeState->fastClassLookup.stringClass)     { isClass = JKClassString;     }
+//  else if(object->isa == encodeState->fastClassLookup.numberClass)     { isClass = JKClassNumber;     }
+//  else if(object->isa == encodeState->fastClassLookup.arrayClass)      { isClass = JKClassArray;      }
+//  else if(object->isa == encodeState->fastClassLookup.dictionaryClass) { isClass = JKClassDictionary; }
+//  else if(object->isa == encodeState->fastClassLookup.nullClass)       { isClass = JKClassNull;       }
+//  else {
+//         if([object isKindOfClass:[NSString     class]]) { encodeState->fastClassLookup.stringClass     = object->isa; isClass = JKClassString;     }
+//    else if([object isKindOfClass:[NSNumber     class]]) { encodeState->fastClassLookup.numberClass     = object->isa; isClass = JKClassNumber;     }
+//    else if([object isKindOfClass:[NSArray      class]]) { encodeState->fastClassLookup.arrayClass      = object->isa; isClass = JKClassArray;      }
+//    else if([object isKindOfClass:[NSDictionary class]]) { encodeState->fastClassLookup.dictionaryClass = object->isa; isClass = JKClassDictionary; }
+//    else if([object isKindOfClass:[NSNull       class]]) { encodeState->fastClassLookup.nullClass       = object->isa; isClass = JKClassNull;       }
+//    else { jk_encode_error(encodeState, @"Unable to serialize object class %@.", NSStringFromClass([object class])); return(1); }
+//  }
 
   switch(isClass) {
     case JKClassString:
@@ -1752,7 +1752,7 @@ static int jk_encode_add_atom_to_buffer(JKEncodeState *encodeState, void *object
           for(id keyObject in object) {
             if(printComma) { if(jk_encode_write(encodeState, ",")) { return(1); } }
             printComma = 1;
-            if(!((keyObject->isa == encodeState->fastClassLookup.stringClass) || [keyObject isKindOfClass:[NSString class]])) { jk_encode_error(encodeState, @"Key must be a string object."); return(1); }
+//            if(!((keyObject->isa == encodeState->fastClassLookup.stringClass) || [keyObject isKindOfClass:[NSString class]])) { jk_encode_error(encodeState, @"Key must be a string object."); return(1); }
             if(jk_encode_add_atom_to_buffer(encodeState, keyObject)) { return(1); }
             if(jk_encode_write(encodeState, ":")) { return(1); }
             if(jk_encode_add_atom_to_buffer(encodeState, (void *)CFDictionaryGetValue((CFDictionaryRef)object, keyObject))) { return(1); }
@@ -1763,7 +1763,7 @@ static int jk_encode_add_atom_to_buffer(JKEncodeState *encodeState, void *object
           for(idx = 0L; idx < dictionaryCount; idx++) {
             if(printComma) { if(jk_encode_write(encodeState, ",")) { return(1); } }
             printComma = 1;
-            if(!((((id)keys[idx])->isa == encodeState->fastClassLookup.stringClass) || [(id)keys[idx] isKindOfClass:[NSString class]])) { jk_encode_error(encodeState, @"Key must be a string object."); return(1); }
+//            if(!((((id)keys[idx])->isa == encodeState->fastClassLookup.stringClass) || [(id)keys[idx] isKindOfClass:[NSString class]])) { jk_encode_error(encodeState, @"Key must be a string object."); return(1); }
             if(jk_encode_add_atom_to_buffer(encodeState, keys[idx])) { return(1); }
             if(jk_encode_write(encodeState, ":")) { return(1); }
             if(jk_encode_add_atom_to_buffer(encodeState, objects[idx])) { return(1); }

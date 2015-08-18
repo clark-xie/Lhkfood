@@ -1840,7 +1840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3k-Cg-ITt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3199" y="2425"/>
+            <point key="canvasLocation" x="3199.5" y="2425"/>
         </scene>
         <!--新手帮助-->
         <scene sceneID="XSH-eA-24q">

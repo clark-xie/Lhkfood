@@ -2,7 +2,7 @@
 //  KeyWordSearchView.m
 //  MapViewDemo
 //
-//  Created by huwei on 11/12/12.
+//  Created by leadmap on 11/12/12.
 //
 //
 

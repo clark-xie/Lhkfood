@@ -2,8 +2,8 @@
 //  ViewController.m
 //  DigitHuBei_IPhone
 //
-//  Created by huwei on 7/8/13.
-//  Copyright (c) 2013 huwei. All rights reserved.
+//  Created by leadmap on 7/8/13.
+//  Copyright (c) 2013 leadmap. All rights reserved.
 //
 
 #import "ViewController.h"

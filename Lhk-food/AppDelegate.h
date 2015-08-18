@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  DigitHubei_IPad
 //
-//  Created by huwei on 7/9/13.
-//  Copyright (c) 2013 huwei. All rights reserved.
+//  Created by leadmap on 7/9/13.
+//  Copyright (c) 2013 leadmap. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

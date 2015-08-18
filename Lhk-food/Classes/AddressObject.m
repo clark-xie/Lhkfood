@@ -2,7 +2,7 @@
 //  AddressObject.m
 //  MapViewDemo
 //
-//  Created by huwei on 11/20/12.
+//  Created by leadmap on 11/20/12.
 //
 //
 
