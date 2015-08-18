@@ -1790,7 +1790,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/SDKs/ArcGIS/iOS/**",
-					/Users/EsriApp/Library/SDKs/ArcGIS/iOS,
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1824,7 +1823,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/SDKs/ArcGIS/iOS/**",
-					/Users/EsriApp/Library/SDKs/ArcGIS/iOS,
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -53,15 +53,14 @@
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    //去掉软件更新功能
     //选择软件更新列
-    if([indexPath row] == 2)
-    {
-    //版本更新判断
-    [self onCheckVersion];
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更新" message:@"此版本为最新版本" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//    alert.tag = 10001;
-//    [alert show];
-    }
+//    if([indexPath row] == 2)
+//    {
+//    //版本更新判断
+//    [self onCheckVersion];
+//
+//    }
 }
 
 
