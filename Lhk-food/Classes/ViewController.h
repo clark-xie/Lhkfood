@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <ArcGIS/ArcGIS.h>
-#import "NIDropDown.h"
-#import "CustemCalloutViewViewController.h"
+//#import "NIDropDown.h"
+//#import "CustemCalloutViewViewController.h"
 #import "TianDiTuWMTSLayer.h"
 
 #import "HYActivityView.h"
@@ -30,7 +30,7 @@
     //http请求
     ASIHTTPRequest *asiRequest;
     UIToolbar *_toolbar;
-	CMPopTipView *popTipView;
+//	CMPopTipView *popTipView;
 	//this map has a dynamic layer, need a view to act as a container for it
     UISearchBar * _searchBar;
     BOOL risHidden;
@@ -39,8 +39,8 @@
     AGSSimpleMarkerSymbol *_simpleMarkerSymbol;
     
     BOOL isQuery;
-    SFavoriteDB *_favoriteDb;
-    CustemCalloutViewViewController *_custemCallout;//自定义气泡
+//    SFavoriteDB *_favoriteDb;
+//    CustemCalloutViewViewController *_custemCallout;//自定义气泡
     AGSEnvelope *_curEnvelope;
     //ASIHTTPRequest *request;
     NSMutableArray	*visiblePopTipViews;
@@ -50,12 +50,12 @@
     //UIButton *btnMore;
     UIView *btnLocation;
     UIView *btnMore;
-    MesureTools      *_mTools;
+//    MesureTools      *_mTools;
     UIView  *measureView;
     UILabel *measureRsult;
     UIPopoverController *_popViewController;
     UIButton *btnSelect;
-    NIDropDown *dropDown;
+//    NIDropDown *dropDown;
     NSArray *_results;
     NSString *isKorR;
     NSString *_selectLength;
@@ -94,13 +94,13 @@
 @property (nonatomic,retain) AGSFeatureSet *featureSet;
 @property (nonatomic,retain) AGSSimpleMarkerSymbol *simpleMarkerSymbol;
 @property (nonatomic)  BOOL isQuery;
-@property (nonatomic,retain)		   SFavoriteDB *favoriteDb;
-@property (nonatomic,retain)		   CustemCalloutViewViewController *custemCallout;
+//@property (nonatomic,retain)		   SFavoriteDB *favoriteDb;
+//@property (nonatomic,retain)		   CustemCalloutViewViewController *custemCallout;
 @property (nonatomic,retain)		   AGSEnvelope *curEnvelope;
 //@property (nonatomic,retain)		  ASIHTTPRequest *request;
 @property (nonatomic, retain)	id				currentPopTipViewTarget;
 @property (nonatomic, retain)	NSMutableArray	*visiblePopTipViews;
-@property (nonatomic, retain)	CMPopTipView *popTipView;
+//@property (nonatomic, retain)	CMPopTipView *popTipView;
 @property (nonatomic)	BOOL isAddLabel;
 @property (retain, nonatomic) IBOutlet UIButton *btnSelect;
 @property (nonatomic, retain)  NSArray *results;

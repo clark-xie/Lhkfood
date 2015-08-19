@@ -17,10 +17,10 @@
 #import "DejalActivityView.h"
 #import <ArcGIS/ArcGIS.h>
 #import "AppDelegate.h"
-#import "SFavoriteDB.h"
+//#import "SFavoriteDB.h"
 //#import "CustemCalloutViewViewController.h"
-#import "CMPopTipView.h"
-#import "MesureTools.h"
+//#import "CMPopTipView.h"
+//#import "MesureTools.h"
 
 #import "PopoverView.h"
 

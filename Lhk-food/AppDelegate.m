@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
-#import "LaunchImageTransition.h"
-#import "MapDownLoadManager.h"
+//#import "LaunchImageTransition.h"
+//#import "MapDownLoadManager.h"
 
 @implementation AppDelegate
 @synthesize navigationController;
@@ -39,8 +39,7 @@
 //        NSLocalizedString(@"OKButtonTitle", @"OKButtonTitle")
     }
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+//    // Override point for customization after application launch//    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 // 
 //    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
 //    self.mapDownLoadManager =  [[MapDownLoadManager alloc] initWithNibName:@"MapDownLoadManager" bundle:nil];

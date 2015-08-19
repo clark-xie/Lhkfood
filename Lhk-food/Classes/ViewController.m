@@ -8,17 +8,17 @@
 
 #import "ViewController.h"
 #import "TianDiTuWMTSLayer.h"
-#import "RoundSearchView.h"
-#import "KeyWordSearchView.h"
-#import "BookMarksViewController.h"
-#import "KSearchDetailsView.h"
-#import "BackGroundView.h"
-#import "FavoriteMangerView.h"
-#import "LabelMangerView.h"
-#import "LabelNewView.h"
+//#import "RoundSearchView.h"
+//#import "KeyWordSearchView.h"
+//#import "BookMarksViewController.h"
+//#import "KSearchDetailsView.h"
+//#import "BackGroundView.h"
+//#import "FavoriteMangerView.h"
+//#import "LabelMangerView.h"
+//#import "LabelNewView.h"
 #import "PopoverView.h"
-#import "Commont.h"
-#import "CMPopTipView.h"
+//#import "Commont.h"
+//#import "CMPopTipView.h"
 @interface ViewController ()
 
 @property (nonatomic, strong) HYActivityView *activityView;
@@ -33,13 +33,13 @@
 @synthesize graphicsLayer = _graphicsLayer;
 //@synthesize queryTask = _queryTask, query = _query, featureSet = _featureSet;
 @synthesize isQuery;
-@synthesize favoriteDb=_favoriteDb;
-@synthesize custemCallout=_custemCallout;
+//@synthesize favoriteDb=_favoriteDb;
+//@synthesize custemCallout=_custemCallout;
 @synthesize curEnvelope = _curEnvelope;
 //@synthesize request;
 @synthesize currentPopTipViewTarget;
 @synthesize visiblePopTipViews;
-@synthesize popTipView;
+//@synthesize popTipView;
 @synthesize toolbar=_toolbar;
 @synthesize isAddLabel;
 @synthesize btnView;
@@ -116,14 +116,14 @@
     //[self.navigationController  setToolbarHidden:NO animated:YES];
     
     
-	self.custemCallout = [[CustemCalloutViewViewController alloc] initWithNibName:@"CustemCalloutViewViewController" bundle:nil];
-    self.visiblePopTipViews = [NSMutableArray array];
-    
-    
-    self.isAddLabel= NO;
-    
-    _mTools = [[MesureTools alloc] initWithMesureTool:self.mapView graphicsLayer:self.graphicsLayer];
-	_mTools.delegate = self;
+//	self.custemCallout = [[CustemCalloutViewViewController alloc] initWithNibName:@"CustemCalloutViewViewController" bundle:nil];
+//    self.visiblePopTipViews = [NSMutableArray array];
+//    
+//    
+//    self.isAddLabel= NO;
+//    
+//    _mTools = [[MesureTools alloc] initWithMesureTool:self.mapView graphicsLayer:self.graphicsLayer];
+//	_mTools.delegate = self;
     [self loadAllFavorite];
     [self loadAllLabels];
     [self showLabelPoints:NO];
@@ -168,7 +168,7 @@
     //[self.graphicsLayer refresh];
     [self.roundGraphicsLayer refresh];
     [self.keyGraphicsLayer refresh];
-    [_mTools clear];
+//    [_mTools clear];
     [self.measureView setHidden:YES];
     self.toolbar.hidden = YES;
     self.mapView.touchDelegate = self;
@@ -351,6 +351,7 @@
 
 -(void)showLabels
 {
+    /*
     [_mTools clear];
     LabelMangerView *labelManger = [[LabelMangerView alloc]initWithNibName:@"LabelMangerView" bundle:nil];
     labelManger.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
@@ -365,21 +366,22 @@
     //or if you want to change it's position also, then:
     navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 560, 320);
     
+     */
 }
 -(void)showFavoriteManger{
-    [_mTools clear];
-    FavoriteMangerView *favoriteView = [[FavoriteMangerView alloc]initWithNibName:@"FavoriteMangerView" bundle:nil];
-    favoriteView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    favoriteView.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    [_mTools clear];
+//    FavoriteMangerView *favoriteView = [[FavoriteMangerView alloc]initWithNibName:@"FavoriteMangerView" bundle:nil];
+//    favoriteView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    favoriteView.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    
+//    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:favoriteView];
     
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:favoriteView];
-    
-    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentModalViewController: navigation animated:NO];
-    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
-    //or if you want to change it's position also, then:
-    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-260, [[UIScreen mainScreen] bounds].size.height/2-200, 560, 320);
+//    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentModalViewController: navigation animated:NO];
+//    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
+//    //or if you want to change it's position also, then:
+//    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-260, [[UIScreen mainScreen] bounds].size.height/2-200, 560, 320);
 
 }
 
@@ -391,44 +393,44 @@
     [self.mapView zoomOut:YES];
 }
 -(void)showDetailInfo:(AGSGraphic*)graphic{
-    BookMarksViewController *bookmarksView = [[BookMarksViewController alloc]initWithNibName:@"BookMarksViewController" bundle:nil];
-    
-    [bookmarksView putGrapic:graphic];
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:bookmarksView];
-    
-    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentModalViewController: navigation animated:NO];
-    
-    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 360, 320);
-    [navigation.navigationItem setHidesBackButton:NO animated:NO];
+//    BookMarksViewController *bookmarksView = [[BookMarksViewController alloc]initWithNibName:@"BookMarksViewController" bundle:nil];
+//    
+//    [bookmarksView putGrapic:graphic];
+//    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:bookmarksView];
+//    
+//    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentModalViewController: navigation animated:NO];
+//    
+//    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 360, 320);
+//    [navigation.navigationItem setHidesBackButton:NO animated:NO];
     
 }
 
 -(void)showKeyWordSearch{
-    [_mTools clear];
-    //if (!self.searchBar.becomeFirstResponder) {
-    //    [self.searchBar resignFirstResponder];
-    //}
-    if (dropDown!=nil) {
-        [dropDown hideDropDown:self.btnSelect];
-        [self rel];
-    }
-    KeyWordSearchView *keySearchView = [[KeyWordSearchView alloc]initWithNibName:@"KeyWordSearchView" bundle:nil];
-    // keySearchView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    //keySearchView.modalPresentationStyle = UIModalPresentationCurrentContext;
-    [keySearchView putEnvelope:self.mapView.visibleAreaEnvelope];
-    keySearchView.view.frame = CGRectMake(0, 0, 460, 360);
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:keySearchView];
-    nav.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    nav.modalPresentationStyle = UIModalPresentationFormSheet;
-   // [self.navigationController presentModalViewController: nav animated:NO];
-    //[self presentModalViewController:nav animated:NO];
-    nav.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2, [[UIScreen mainScreen] bounds].size.height/2+400, 480, 360);
-    [self presentViewController:nav animated:YES completion:^{}];
-    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
-    //or if you want to change it's position also, then:
-    
+//    [_mTools clear];
+//    //if (!self.searchBar.becomeFirstResponder) {
+//    //    [self.searchBar resignFirstResponder];
+//    //}
+//    if (dropDown!=nil) {
+//        [dropDown hideDropDown:self.btnSelect];
+//        [self rel];
+//    }
+//    KeyWordSearchView *keySearchView = [[KeyWordSearchView alloc]initWithNibName:@"KeyWordSearchView" bundle:nil];
+//    // keySearchView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    //keySearchView.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    [keySearchView putEnvelope:self.mapView.visibleAreaEnvelope];
+//    keySearchView.view.frame = CGRectMake(0, 0, 460, 360);
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:keySearchView];
+//    nav.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    nav.modalPresentationStyle = UIModalPresentationFormSheet;
+//   // [self.navigationController presentModalViewController: nav animated:NO];
+//    //[self presentModalViewController:nav animated:NO];
+//    nav.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2, [[UIScreen mainScreen] bounds].size.height/2+400, 480, 360);
+//    [self presentViewController:nav animated:YES completion:^{}];
+//    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
+//    //or if you want to change it's position also, then:
+//    
 
     //nav.view.superview.frame = CGRectMake(200, 200, 320, 260);
     
@@ -436,48 +438,48 @@
 //周边查询
 -(void)showRoundSearch{
     //[self enableLocation];
-    [_mTools clear];
-    if (dropDown!=nil) {
-        [dropDown hideDropDown:self.btnSelect];
-        [self rel];
-    }
-     AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"poiresult.png"]];
-    RoundSearchView *roundSearchView = [[RoundSearchView alloc]initWithNibName:@"RoundSearchView" bundle:nil];
-    //roundSearchView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    //roundSearchView.modalPresentationStyle = UIModalPresentationCurrentContext;
-    AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:[self.mapView.visibleArea.envelope center]
-                                                  symbol:nil
-                                              attributes:nil
-                                    infoTemplateDelegate:nil];
-    [roundSearchView putGraphic:nil];
-    [roundSearchView putEnvelope:self.mapView.visibleAreaEnvelope];
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:roundSearchView];
-    
-    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentModalViewController: navigation animated:NO];
-    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
-    //or if you want to change it's position also, then:
-    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-260, [[UIScreen mainScreen] bounds].size.height/2-200, 560, 320);
+//    [_mTools clear];
+//    if (dropDown!=nil) {
+//        [dropDown hideDropDown:self.btnSelect];
+//        [self rel];
+//    }
+//     AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"poiresult.png"]];
+//    RoundSearchView *roundSearchView = [[RoundSearchView alloc]initWithNibName:@"RoundSearchView" bundle:nil];
+//    //roundSearchView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    //roundSearchView.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:[self.mapView.visibleArea.envelope center]
+//                                                  symbol:nil
+//                                              attributes:nil
+//                                    infoTemplateDelegate:nil];
+//    [roundSearchView putGraphic:nil];
+//    [roundSearchView putEnvelope:self.mapView.visibleAreaEnvelope];
+//    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:roundSearchView];
+//    
+//    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentModalViewController: navigation animated:NO];
+//    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
+//    //or if you want to change it's position also, then:
+//    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-260, [[UIScreen mainScreen] bounds].size.height/2-200, 560, 320);
 }
 //周边查询
 -(void)showRoundSearch:(AGSGraphic*)graphic{
-    [_mTools clear];
-    if (dropDown!=nil) {
-        [dropDown hideDropDown:self.btnSelect];
-        [self rel];
-    }
-    RoundSearchView *roundSearchView = [[RoundSearchView alloc]initWithNibName:@"RoundSearchView" bundle:nil];
-    [roundSearchView putGraphic:graphic];
-    [roundSearchView putEnvelope:self.mapView.visibleArea.envelope];
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:roundSearchView];
-    
-    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentModalViewController: navigation animated:NO];
-    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
-    //or if you want to change it's position also, then:
-    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 560, 320);
+//    [_mTools clear];
+//    if (dropDown!=nil) {
+//        [dropDown hideDropDown:self.btnSelect];
+//        [self rel];
+//    }
+//    RoundSearchView *roundSearchView = [[RoundSearchView alloc]initWithNibName:@"RoundSearchView" bundle:nil];
+//    [roundSearchView putGraphic:graphic];
+//    [roundSearchView putEnvelope:self.mapView.visibleArea.envelope];
+//    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:roundSearchView];
+//    
+//    navigation.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    navigation.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentModalViewController: navigation animated:NO];
+//    //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
+//    //or if you want to change it's position also, then:
+//    navigation.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 560, 320);
 }
 
 
@@ -486,7 +488,7 @@
     BOOL ishide = self.measureView.hidden;
     [self.measureView setHidden:!ishide];
     self.toolbar.hidden = YES;
-    [_mTools clear];
+//    [_mTools clear];
     
 }
 
@@ -574,29 +576,29 @@
 }
 -(void)loadAllLabels
 {
-    NSArray *labels = [self.favoriteDb getAllLabel];
-    AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"pins.png"]];
-    [self.labelLayer removeAllGraphics];
-    CGPoint pt;
-    for (int i=0; i<labels.count; i++) {
-        LabelObject *label =[labels objectAtIndex:i];
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        [dict setObject: label.uid forKey: @"uid"];
-        [dict setObject: label.Name forKey: @"name"];
-        pt.x=[(NSNumber*)label.X doubleValue];
-        pt.y=[(NSNumber*)label.Y doubleValue];
-        //pt = [Commont lonLat2Mercator:pt];
-        AGSPoint * point =[AGSPoint pointWithX:pt.x
-                                             y:pt.y
-                              spatialReference:self.mapView.spatialReference];
-        AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:point
-                                                      symbol:symbol
-                                                  attributes:dict
-                                        infoTemplateDelegate:self];
-        [self.labelLayer addGraphic:graphic];
-    }
-    [self.labelLayer refresh];
-    //;
+//    NSArray *labels = [self.favoriteDb getAllLabel];
+//    AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"pins.png"]];
+//    [self.labelLayer removeAllGraphics];
+//    CGPoint pt;
+//    for (int i=0; i<labels.count; i++) {
+//        LabelObject *label =[labels objectAtIndex:i];
+//        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//        [dict setObject: label.uid forKey: @"uid"];
+//        [dict setObject: label.Name forKey: @"name"];
+//        pt.x=[(NSNumber*)label.X doubleValue];
+//        pt.y=[(NSNumber*)label.Y doubleValue];
+//        //pt = [Commont lonLat2Mercator:pt];
+//        AGSPoint * point =[AGSPoint pointWithX:pt.x
+//                                             y:pt.y
+//                              spatialReference:self.mapView.spatialReference];
+//        AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:point
+//                                                      symbol:symbol
+//                                                  attributes:dict
+//                                        infoTemplateDelegate:self];
+//        [self.labelLayer addGraphic:graphic];
+//    }
+//    [self.labelLayer refresh];
+//    //;
 }
 -(IBAction)showLabelManeger:(id)sender
 {
@@ -623,39 +625,39 @@
 
 -(void)showQueryResults:(NSArray*)results:(NSString*)key :(NSString*)keyword :(NSString*)keycode :(AGSPoint *)point :(int)count
 {
-    [self.btnSelect setHidden:NO];
-    self.count = count;
-    if(dropDown == nil) {
-        isKorR=key;
-        dropDown = [[NIDropDown alloc] initDropDown:self.btnSelect :results :key :self.selectLength :count];
-        [dropDown putKeyCode:keycode];
-        [dropDown putKeyWord:keyword];
-        [dropDown putMapPont:point];
-        dropDown.count = count;
-        // [dropDown putSelect:self.selectLength];
-        dropDown.delegate = self;
-        
-    }
-    else {
-        if (![isKorR isEqualToString:key]) {
-            isKorR=key;
-            [dropDown hideDropDown:self.btnSelect];
-            [self rel];
-            dropDown = [[NIDropDown alloc] initDropDown:self.btnSelect :self.results :key :self.selectLength :count];
-            [dropDown putKeyCode:keycode];
-            [dropDown putKeyWord:keyword];
-            [dropDown putMapPont:point];
-
-            //[dropDown putSelect:self.selectLength];
-            dropDown.delegate = self;
-            
-        }
-        else
-        {
-            [dropDown hideDropDown:self.btnSelect];
-        }
-        
-    }
+//    [self.btnSelect setHidden:NO];
+//    self.count = count;
+//    if(dropDown == nil) {
+//        isKorR=key;
+//        dropDown = [[NIDropDown alloc] initDropDown:self.btnSelect :results :key :self.selectLength :count];
+//        [dropDown putKeyCode:keycode];
+//        [dropDown putKeyWord:keyword];
+//        [dropDown putMapPont:point];
+//        dropDown.count = count;
+//        // [dropDown putSelect:self.selectLength];
+//        dropDown.delegate = self;
+//        
+//    }
+//    else {
+//        if (![isKorR isEqualToString:key]) {
+//            isKorR=key;
+//            [dropDown hideDropDown:self.btnSelect];
+//            [self rel];
+//            dropDown = [[NIDropDown alloc] initDropDown:self.btnSelect :self.results :key :self.selectLength :count];
+//            [dropDown putKeyCode:keycode];
+//            [dropDown putKeyWord:keyword];
+//            [dropDown putMapPont:point];
+//
+//            //[dropDown putSelect:self.selectLength];
+//            dropDown.delegate = self;
+//            
+//        }
+//        else
+//        {
+//            [dropDown hideDropDown:self.btnSelect];
+//        }
+    
+//    }
 }
 
 
@@ -890,132 +892,132 @@
 }
 #pragma mark measureDelegate methods
 
-- (void)LengthChanged:(MesureTools *)mTool length:(double )length
-{
-	self.measureRsult.text = [NSString stringWithFormat:@"当前距离为:%lf公里",length/1000];
-}
-- (void)AreaChanged:(MesureTools *)mTool area:(double )area
-{
-	self.measureRsult.text = [NSString stringWithFormat:@"当前面积为:%lf平方公里",area/1000000];
-}
-
--(IBAction)meaesureLength:(id)sender
-{
-    [_mTools toolSelected:1];
-}
--(IBAction)meaesureArea:(id)sender
-{
-    [_mTools toolSelected:2];
-}
-
-
-#pragma mark visible buttons methods
-
--(IBAction)selectClicked:(id)sender
-{
-    
-    if(dropDown == nil) {
-        dropDown = [[NIDropDown alloc] initDropDown:sender  :self.results :isKorR :self.selectLength :self.count];
-        dropDown.delegate = self;
-    }
-    else {
-        if (dropDown.hidden) {
-            [dropDown showDropDown:sender];
-        }
-        else
-        {
-            [dropDown hideDropDown:sender];
-        }
-    }
-    
-}
-- (void) niDropDownDelegateMethod: (NIDropDown *) sender {
-    [self rel];
-}
-
--(void)rel{
-    dropDown = nil;
-}
-
-
-
-#pragma mark CMPopTipViewDelegate methods
-
-- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
-	[visiblePopTipViews removeObject:popTipView];
-	self.currentPopTipViewTarget = nil;
-}
-- (void)dismissAllPopTipViews {
-	while ([self.visiblePopTipViews count] > 0) {
-		CMPopTipView *popTipViews = [visiblePopTipViews objectAtIndex:0];
-		[self.visiblePopTipViews removeObjectAtIndex:0];
-		[popTipViews dismissAnimated:YES];
-	}
-}
-
--(void)loadAllFavorite
-{
-    NSArray *favorites = [self.favoriteDb getAllFavorite];
-    AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"star_full.png"]];
-    [self.favoriteLayer removeAllGraphics];
-    CGPoint pt;
-    for (int i=0; i<favorites.count; i++) {
-        SFavorite *favorite =[favorites objectAtIndex:i];
-        pt.x=[(NSNumber*)favorite.x doubleValue];
-        pt.y=[(NSNumber*)favorite.y doubleValue];
-        //pt = [Commont lonLat2Mercator:pt];
-        AGSPoint * point =[AGSPoint pointWithX:pt.x
-                                             y:pt.y
-                              spatialReference:self.mapView.spatialReference];
-        AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:point
-                                                      symbol:symbol
-                                                  attributes:[self getAttributes:favorite]
-                                        infoTemplateDelegate:self];
-        [self.favoriteLayer addGraphic:graphic];
-    }
-    [self.favoriteLayer refresh];
-    [self showFavoriteAllWays:NO];
-}
--(void)showFavoriteAllWays:(BOOL) ishide
-{
-    [self.measureView setHidden:YES];
-    self.toolbar.hidden = YES;
-    NSArray *dict=self.mapView.mapLayers;
-    
-    for (int i=0; i<[dict count]; i++) {
-        AGSGraphicsLayer *lyr=[dict objectAtIndex:i];
-        if([lyr.name isEqualToString:@"fGraphics Layer"]){
-            //BOOL ishid = lyrView.hidden;
-            [lyr setVisible:ishide] ;
-        }
-    }
-}
-
--(NSMutableDictionary*)getAttributes:(SFavorite*)favorite
-{
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    if (favorite.uid!=nil) {
-        [dict setObject: favorite.uid forKey: @"uid"];
-    }
-    if(favorite.FavoriteName!=nil) {
-        [dict setObject: favorite.FavoriteName forKey: @"FavoriteName"];
-    }
-    if(favorite.Address!=nil) {
-        [dict setObject: favorite.Address forKey: @"addr"];
-    }
-    if(favorite.Name!=nil) {
-        [dict setObject: favorite.Name forKey: @"name"];
-    }
-    if(favorite.x!=nil) {
-        [dict setObject: favorite.x forKey: @"x"];
-    }
-    if(favorite.y!=nil) {
-        [dict setObject: favorite.y forKey: @"y"];
-    }
-    
-    
-    return dict;
-}
+//- (void)LengthChanged:(MesureTools *)mTool length:(double )length
+//{
+//	self.measureRsult.text = [NSString stringWithFormat:@"当前距离为:%lf公里",length/1000];
+//}
+//- (void)AreaChanged:(MesureTools *)mTool area:(double )area
+//{
+//	self.measureRsult.text = [NSString stringWithFormat:@"当前面积为:%lf平方公里",area/1000000];
+//}
+//
+//-(IBAction)meaesureLength:(id)sender
+//{
+//    [_mTools toolSelected:1];
+//}
+//-(IBAction)meaesureArea:(id)sender
+//{
+//    [_mTools toolSelected:2];
+//}
+//
+//
+//#pragma mark visible buttons methods
+//
+//-(IBAction)selectClicked:(id)sender
+//{
+//    
+//    if(dropDown == nil) {
+//        dropDown = [[NIDropDown alloc] initDropDown:sender  :self.results :isKorR :self.selectLength :self.count];
+//        dropDown.delegate = self;
+//    }
+//    else {
+//        if (dropDown.hidden) {
+//            [dropDown showDropDown:sender];
+//        }
+//        else
+//        {
+//            [dropDown hideDropDown:sender];
+//        }
+//    }
+//    
+//}
+//- (void) niDropDownDelegateMethod: (NIDropDown *) sender {
+//    [self rel];
+//}
+//
+//-(void)rel{
+//    dropDown = nil;
+//}
+//
+//
+//
+//#pragma mark CMPopTipViewDelegate methods
+//
+//- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
+//	[visiblePopTipViews removeObject:popTipView];
+//	self.currentPopTipViewTarget = nil;
+//}
+//- (void)dismissAllPopTipViews {
+//	while ([self.visiblePopTipViews count] > 0) {
+//		CMPopTipView *popTipViews = [visiblePopTipViews objectAtIndex:0];
+//		[self.visiblePopTipViews removeObjectAtIndex:0];
+//		[popTipViews dismissAnimated:YES];
+//	}
+//}
+//
+//-(void)loadAllFavorite
+//{
+//    NSArray *favorites = [self.favoriteDb getAllFavorite];
+//    AGSSimpleMarkerSymbol *symbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:[UIImage imageNamed:@"star_full.png"]];
+//    [self.favoriteLayer removeAllGraphics];
+//    CGPoint pt;
+//    for (int i=0; i<favorites.count; i++) {
+//        SFavorite *favorite =[favorites objectAtIndex:i];
+//        pt.x=[(NSNumber*)favorite.x doubleValue];
+//        pt.y=[(NSNumber*)favorite.y doubleValue];
+//        //pt = [Commont lonLat2Mercator:pt];
+//        AGSPoint * point =[AGSPoint pointWithX:pt.x
+//                                             y:pt.y
+//                              spatialReference:self.mapView.spatialReference];
+//        AGSGraphic *graphic =[AGSGraphic graphicWithGeometry:point
+//                                                      symbol:symbol
+//                                                  attributes:[self getAttributes:favorite]
+//                                        infoTemplateDelegate:self];
+//        [self.favoriteLayer addGraphic:graphic];
+//    }
+//    [self.favoriteLayer refresh];
+//    [self showFavoriteAllWays:NO];
+//}
+//-(void)showFavoriteAllWays:(BOOL) ishide
+//{
+//    [self.measureView setHidden:YES];
+//    self.toolbar.hidden = YES;
+//    NSArray *dict=self.mapView.mapLayers;
+//    
+//    for (int i=0; i<[dict count]; i++) {
+//        AGSGraphicsLayer *lyr=[dict objectAtIndex:i];
+//        if([lyr.name isEqualToString:@"fGraphics Layer"]){
+//            //BOOL ishid = lyrView.hidden;
+//            [lyr setVisible:ishide] ;
+//        }
+//    }
+//}
+//
+//-(NSMutableDictionary*)getAttributes:(SFavorite*)favorite
+//{
+//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//    if (favorite.uid!=nil) {
+//        [dict setObject: favorite.uid forKey: @"uid"];
+//    }
+//    if(favorite.FavoriteName!=nil) {
+//        [dict setObject: favorite.FavoriteName forKey: @"FavoriteName"];
+//    }
+//    if(favorite.Address!=nil) {
+//        [dict setObject: favorite.Address forKey: @"addr"];
+//    }
+//    if(favorite.Name!=nil) {
+//        [dict setObject: favorite.Name forKey: @"name"];
+//    }
+//    if(favorite.x!=nil) {
+//        [dict setObject: favorite.x forKey: @"x"];
+//    }
+//    if(favorite.y!=nil) {
+//        [dict setObject: favorite.y forKey: @"y"];
+//    }
+//    
+//    
+//    return dict;
+//}
 
 //单机事件
 - (void)mapView:(AGSMapView *)mapView didClickAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics
@@ -1027,20 +1029,20 @@
     }
     
     if (self.isAddLabel) {
-        LabelNewView *labelNew = [[LabelNewView alloc]initWithNibName:@"LabelNewView" bundle:nil] ;
+//        LabelNewView *labelNew = [[LabelNewView alloc]initWithNibName:@"LabelNewView" bundle:nil] ;
         //labelNew.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         //labelNew.modalPresentationStyle = UIModalPresentationCurrentContext;
-        [labelNew putPoint:mappoint];
+//        [labelNew putPoint:mappoint];
         
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:labelNew];
-        nav.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        nav.modalPresentationStyle = UIModalPresentationFormSheet;
+//        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:labelNew];
+//        nav.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//        nav.modalPresentationStyle = UIModalPresentationFormSheet;
         
         //nav.view.superview.bounds = CGRectMake(0, 0, 280, 320);
         //or if you want to change it's position also, then:
-        nav.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 460, 320);
+//        nav.view.superview.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2-240, [[UIScreen mainScreen] bounds].size.height/2-180, 460, 320);
         //[self.navigationController presentModalViewController:nav  animated:YES];
-        [self.navigationController presentModalViewController: nav animated:NO];
+//        [self.navigationController presentModalViewController: nav animated:NO];
         self.isAddLabel = NO;
     }
 
